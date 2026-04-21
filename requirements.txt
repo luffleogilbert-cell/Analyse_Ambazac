@@ -1,0 +1,8 @@
+onecode>=1,<2
+numpy
+pandas
+geopandas
+matplotlib
+seaborn
+rasterio
+scikit-learn
