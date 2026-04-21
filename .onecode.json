@@ -1,3 +1,7 @@
-{
-    "flows": ["flows/analyse_ambazac.py"]
-}
+[
+    {
+        "file": "flows/analyse_ambazac",
+        "label": "Analyse_Ambazac",
+        "attributes": {}
+    }
+]
