@@ -14,8 +14,6 @@ from onecode import (
     file_input,
     file_output,
     slider,
-    number_input,
-    FileFilter,
 )
 
 warnings.filterwarnings('ignore')
@@ -69,22 +67,22 @@ def run():
     # ── Paramètres d'entrée ──────────────────────────────────────────────
 
     fichier_geo = file_input(
-        key="fichier_geochimie",
-        value="data/Points_geochimie_AMBAZAC.geojson",
+        'fichier_geochimie',
+        'data/Points_geochimie_AMBAZAC.geojson',
         label="Fichier géochimique (GeoJSON)",
         types=[("GeoJSON", ".geojson .json")]
     )
 
     fichier_mnt = file_input(
-        key="fichier_mnt",
-        value="data/MNT_25M_AMBAZAC_IMAGE.tif",
+        'fichier_mnt',
+        'data/MNT_25M_AMBAZAC_IMAGE.tif',
         label="Image MNT (GeoTIFF)",
         types=[("GeoTIFF", ".tif .tiff")]
     )
 
     facteur_mad = slider(
-        key="facteur_mad",
-        value=2.0,
+        'facteur_mad',
+        2.0,
         label="Facteur MAD (seuil anomalie)",
         min=1.0,
         max=4.0,
@@ -92,8 +90,8 @@ def run():
     )
 
     poids_au = slider(
-        key="poids_au",
-        value=0.40,
+        'poids_au',
+        0.40,
         label="Poids Au dans le score de potentiel",
         min=0.0,
         max=1.0,
@@ -101,8 +99,8 @@ def run():
     )
 
     poids_as = slider(
-        key="poids_as",
-        value=0.20,
+        'poids_as',
+        0.20,
         label="Poids As dans le score de potentiel",
         min=0.0,
         max=1.0,
@@ -110,8 +108,8 @@ def run():
     )
 
     poids_w = slider(
-        key="poids_w",
-        value=0.20,
+        'poids_w',
+        0.20,
         label="Poids W dans le score de potentiel",
         min=0.0,
         max=1.0,
@@ -119,8 +117,8 @@ def run():
     )
 
     poids_bi = slider(
-        key="poids_bi",
-        value=0.20,
+        'poids_bi',
+        0.20,
         label="Poids Bi dans le score de potentiel",
         min=0.0,
         max=1.0,
@@ -128,8 +126,8 @@ def run():
     )
 
     quantile_top = slider(
-        key="quantile_top",
-        value=0.95,
+        'quantile_top',
+        0.95,
         label="Quantile — seuil zones prioritaires (ex: 0.95 = top 5%)",
         min=0.80,
         max=0.99,
