@@ -2,7 +2,7 @@
     "slug": "analyse-ambazac",
     "flows": [
         {
-            "name": "Analyse Potentiel Ambazac",
+            "label": "Analyse Potentiel Ambazac",
             "file": "flows/analyse_ambazac.py",
             "function": "run"
         }
