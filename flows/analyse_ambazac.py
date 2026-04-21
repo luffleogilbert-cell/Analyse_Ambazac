@@ -193,7 +193,7 @@ def run():
         axes[i].set_xlabel('log₁₀')
     fig.suptitle('Distributions des éléments indicateurs (log₁₀) — trait rouge = médiane', y=1.01)
     plt.tight_layout()
-    plt.savefig(file_output(key="distributions", value="outputs/01_distributions.png", make_path=True),
+    plt.savefig(file_output('distributions', 'outputs/01_distributions.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
@@ -226,7 +226,7 @@ def run():
         ax.set_ylabel('Y (m)')
     fig.suptitle(f'Anomalies géochimiques — seuil Médiane+{facteur_mad}×MAD')
     plt.tight_layout()
-    plt.savefig(file_output(key="anomalies", value="outputs/02_anomalies.png", make_path=True),
+    plt.savefig(file_output('anomalies', 'outputs/02_anomalies.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
@@ -255,7 +255,7 @@ def run():
         ax.set_ylabel('Y (m)')
     fig.suptitle('Analyse topographique du MNT, Ambazac (valeurs relatives)')
     plt.tight_layout()
-    plt.savefig(file_output(key="mnt", value="outputs/03_MNT.png", make_path=True),
+    plt.savefig(file_output('mnt', 'outputs/03_MNT.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
@@ -271,7 +271,7 @@ def run():
                 linewidths=0.4, annot_kws={'size': 8})
     ax.set_title('Corrélations entre indicateurs (log₁₀)')
     plt.tight_layout()
-    plt.savefig(file_output(key="correlations", value="outputs/04_correlations.png", make_path=True),
+    plt.savefig(file_output('correlations', 'outputs/04_correlations.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
@@ -309,7 +309,7 @@ def run():
     ax.set_ylabel(f'PC2 ({var[1]:.1f}%)')
     ax.set_title('ACP — colorié par teneur en Au')
     plt.tight_layout()
-    plt.savefig(file_output(key="acp", value="outputs/05_ACP.png", make_path=True),
+    plt.savefig(file_output('acp', 'outputs/05_ACP.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
@@ -356,7 +356,7 @@ def run():
     ax.set_xlabel('X (m)')
     ax.set_ylabel('Y (m)')
     plt.tight_layout()
-    plt.savefig(file_output(key="potentiel_mineral", value="outputs/06_potentiel_mineral.png", make_path=True),
+    plt.savefig(file_output('potentiel_mineral', 'outputs/06_potentiel_mineral.png', make_path=True),
                 dpi=130, bbox_inches='tight')
     plt.close()
 
